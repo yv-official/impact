@@ -1,0 +1,14 @@
+///variables
+@import "abstracts/variables";
+
+//base
+@import "base/base";
+
+//components
+@import "components/classCard";
+@import "components/header";
+@import "components/portal";
+
+//pages
+@import "pages/homepage";
+@import "pages/_userpage"

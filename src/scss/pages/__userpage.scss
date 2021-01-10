@@ -1,0 +1,76 @@
+.user-card{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    overflow: hidden;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);
+
+    &__cover{
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            height: 300px;
+        }
+
+    }
+
+    &__profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            object-position: center;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: -120px;
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    &__name{
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 30px;
+        font-family: $font-family-primary;
+    }
+
+    &__action{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 ;
+
+        .btn{
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: $font-family-primary;
+            border-radius: 3px;
+            transition: 0.3s all ease;
+            cursor: pointer;
+
+            &.select{
+                margin-right: 20px;
+                color: rgb(0, 185, 0);
+                background-color: rgb(205, 255, 205);
+            }
+
+            &.reject{
+                color: rgb(185, 0, 0);
+                background-color: rgb(255, 235, 235);
+            }
+
+            &:hover{
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.295);
+                // padding: 12px 22px;
+            }
+        }
+    }
+}
